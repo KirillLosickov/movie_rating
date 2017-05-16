@@ -1,0 +1,56 @@
+/*ADD MOVIE*/
+
+#addForm {
+    margin: 0px 20px;
+}
+
+.addField, .selectField {
+    height: 25px;
+    width: 240px;
+    border-radius: 5px;
+}
+
+.addField:valid {
+    background: #B4FFB9;
+}
+
+.fieldFormat {
+    font-size: 18px;
+    margin-left: 20px;
+    opacity: 0;
+}
+
+.addField:focus + .fieldFormat {
+    opacity: 1;
+}
+
+.block_b {
+    display: block;
+}
+
+.inline_b {
+    display: inline-block;
+}
+
+button {
+    width: 30px;
+    height: 20px;
+    text-align: center;
+    border-radius: 0;
+    border: 0;
+    background: #8F0D16;
+    color: #FDFDFD;
+    cursor: pointer;
+}
+
+.labelField {
+    width: 200px;
+}
+
+#textarea{
+    width: 720px;
+    height: 200px;
+    border: 3px solid #cccccc;
+    padding: 5px;
+    font-family: Tahoma, sans-serif;
+}

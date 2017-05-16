@@ -1,0 +1,30 @@
+.pagination table {
+    margin: 50px auto;
+}
+
+.pagination tr {
+    border: 0;
+}
+
+.pagination td {
+    width: 20px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid black;
+}
+
+.pagination #current {
+    color: #E83636;
+}
+
+.other_button {
+    color: white;
+    background: rgba(0,0,0,0);
+    font-size: 18px;
+    cursor: pointer;
+    border: 0;
+}
+
+.other_button:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,30 @@
+body {
+    width: 800px;
+    margin: 0px auto;
+    font-family: 'Roboto', sans-serif;
+    background: #232323;
+    background-image: url("../images/progector.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.main {
+    background: rgba(255,150,150,0.5);
+    padding: 20px;
+    margin: 40px 0;
+}
+
+.all-btns {
+    margin: 10px 0;
+    transition: .2s;
+    height: 30px;
+    background: #EDEDED;
+    border: 1px solid #515151;
+    cursor: pointer;
+    min-width: 120px;
+}
+
+.all-btns:hover {
+    background: #404040;
+    color: #ECECEC;
+}

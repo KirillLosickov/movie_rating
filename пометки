@@ -1,0 +1,26 @@
+http://stackoverflow.com/questions/32837446/how-to-create-transaction-handling-by-only-using-servlets-and-jdbc
+
+pattern="^\d{4}\-(0?[1-9]|1[012])\-(0?[1-9]|[12]\d|3[01])$"
+
+<%@include file="part/banner.jsp" %>
+
+впроцессе написания было решено щаписывать в сессию не объект Session, а различные поля, т.к. не могу обратиться
+к параметру объектв в jsp.
+
+если записывать в сессию объект Session с объектами внутри User и Movie,
+то данные объекты не могут венруться функцией
+User user = (User)request.getSession().getAttribute("session.user");  :user=null
+
+Если Сессия сожержит объекты, то доступ к ним не возможен. Пример
+<fmt:setLocale scope="session" value="${sessionScope.user.userLocal}"/>
+доступ к userLocal невозможен. Строка бросает ошибку
+
+
+ т.о Сессия содердит поля
+ String login; (при изменении локали мы берём логин из сесси, т.к. куки на компь.тере
+ пользователя могут быть удалены во время работы приложения)
+
+ String welcomeLocal;
+ String userLocal;
+ оОдновременно в сессии нужно хранить роль пользователя, для того
+ чтобы написать jsp

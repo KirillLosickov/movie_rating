@@ -1,0 +1,2 @@
+настрить в соответствие в данными БД файл - \src\main\resources\by\training\epam\dao\db.properties
+установить количество отображаемых фильмов на странице \src\main\resources\by\training\epam\service\impl\parameter.properties

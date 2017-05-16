@@ -1,0 +1,77 @@
+#img_film {
+    float: left;
+    margin: 0px 20px 10px 20px;
+    width: 270px;
+    height: 420px;
+    border: 1px solid white;
+}
+
+#filmNameMovies {
+    margin-top: 0px;
+    font-size: 32px;
+    color: white;
+}
+
+#average_rating {
+    font-size: 22px;
+    color: orange;
+}
+
+#average_rating:first-letter {
+    font-size: 28px;
+    color: orangered;
+}
+
+#rating_mark:first-letter {
+    font-size: 24px;
+    color: darkorange;
+}
+
+#rating {
+    width: 50px;
+    margin: 0px 5px;
+    text-align: center;
+}
+
+.form_div {
+    display: inline-block;
+    margin: 5px 30px;
+}
+
+#commentField {
+    margin: 10px 0px;
+}
+
+#sectionComments {
+    background: rgba(255,150,150,0.1);
+}
+
+.divComment {
+    color: white;
+    background: rgb(20, 20, 20);
+    padding: 20px;
+    border-bottom: 2px solid black;
+}
+
+.nameComment {
+    font-size: 18px;
+    margin: 0px
+}
+
+#ratingForm {
+    margin: 30px 0px 20px 0px;
+}
+
+.descrip_field {
+    padding: 0px 10px 0 0;
+    font-weight: bold;
+}
+
+/*editMovie*/
+.information{
+    display:inline-block;
+}
+
+.information .field input, .right{
+    float:right;
+}

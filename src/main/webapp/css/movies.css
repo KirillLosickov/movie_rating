@@ -1,0 +1,41 @@
+.main > .poster{
+    margin: 0px 10px 10px 0;
+    float:left;
+}
+
+.button {
+    width: 300px;
+    margin: 10px auto;
+    display: inline-block;
+}
+
+.information {
+    list-style: none;
+    margin: auto;
+}
+
+#film_img {
+    width: 220px;
+    height: 330px;
+    border: 1px solid black;
+}
+
+#film_name {
+    transition: .2s;
+    border: 0px solid black;
+    background: rgba(255, 255, 255, 0.0);
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+#film_name:hover {
+    color: #E62121;
+}
+
+#button_under_film {
+    display: inline-block;
+}

@@ -1,0 +1,13 @@
+.infoAboutFilm {
+    margin: 0;
+    color: black;
+    font-size: 18px;
+    width: 600px;
+    padding: 10px;
+}
+
+#users_rating {
+    width: 130px;
+    text-align: center;
+    padding: 4px;
+}
