@@ -14,7 +14,7 @@ public interface IPersonService {
     /**
      * Get all persons.
      * @return the list of persons.
-     * @throws by.training.epam.service.exception.ServiceException
+     * @throws ServiceException
      */
     List<Person> getAll() throws ServiceException;
 }

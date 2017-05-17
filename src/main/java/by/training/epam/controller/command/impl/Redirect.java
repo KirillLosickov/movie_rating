@@ -4,7 +4,6 @@ import by.training.epam.bean.User;
 import by.training.epam.controller.command.ICommand;
 import by.training.epam.controller.servlet.JspPageName;
 import by.training.epam.controller.servlet.RequestParameter;
-import by.training.epam.service.IMovieService;
 import by.training.epam.service.IUserService;
 import by.training.epam.service.exception.ServiceException;
 import by.training.epam.service.factory.ServiceFactory;
@@ -13,7 +12,6 @@ import org.apache.log4j.Logger;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.Part;
 
 import static by.training.epam.controller.servlet.RequestParameter.*;
 
@@ -31,8 +29,8 @@ public class Redirect implements ICommand {
 
     /**
      * Override method {@link ICommand#execute(HttpServletRequest, HttpServletResponse)}
-     * Redirect parameters to {@link IMovieService#editMovie(String, String, String, String, String, String, String, String, String[], String[], String[], String[], String, Part, String)}
-     * @return path of jsp page
+
+     * @return path of jsp page which depends on user's role.
      */
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
@@ -53,8 +51,7 @@ public class Redirect implements ICommand {
     }
 
     /**
-     * Override method {@link ICommand#execute(HttpServletRequest, HttpServletResponse)}
-     * Redirect parameters to {@link IMovieService#editMovie(String, String, String, String, String, String, String, String, String[], String[], String[], String[], String, Part, String)}
+     * Logic method which read cookie and respond pth of jsp page.
      * @return path of jsp page
      */
     private JspPageName readCookies(HttpServletRequest request) {

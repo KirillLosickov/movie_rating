@@ -15,7 +15,7 @@ public interface IGenreService {
     /**
      * Get all counties.
      * @return the list of countries.
-     * @throws by.training.epam.service.exception.ServiceException
+     * @throws ServiceException
      */
     List<Genre> getAll() throws ServiceException;
 }

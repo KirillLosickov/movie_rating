@@ -32,7 +32,7 @@ public interface IMovieService {
      * @param descriptionString the operand to use as description of movie.
      * @param part the operand to use for get image of movie.
      * @param webInfPath the operand to use as title of movie.
-     * @throws by.training.epam.service.exception.ServiceException
+     * @throws ServiceException
      */
     void addMovie(String title, String budgetString, String profitString, String durationString,
                   String restrictionAgeString, String dateReleaseString, String type, String[] countriesID,
@@ -57,7 +57,7 @@ public interface IMovieService {
      * @param descriptionString the operand to use as description of movie.
      * @param part the operand to use for get image of movie.
      * @param webInfPath the operand to use as title of movie.
-     * @throws by.training.epam.service.exception.ServiceException
+     * @throws ServiceException
      */
     void editMovie(String idMovie, String title, String budgetString, String profitString,
                    String durationString, String restrictionAgeString, String dateReleaseString,
@@ -68,27 +68,27 @@ public interface IMovieService {
     /**
      * Set movie as removed
      * @param idMovie the operand to use as ID of movie.
-     * @throws by.training.epam.service.exception.ServiceException
+     * @throws ServiceException
      * */
     void setRemovedMovie(String idMovie) throws ServiceException;
 
     /**
      * Set movie as unremoved
      * @param idMovie the operand to use as ID of movie.
-     * @throws by.training.epam.service.exception.ServiceException
+     * @throws ServiceException
      * */
     void setUnRemovedMovie(String idMovie) throws ServiceException;
 
     /**
      * Set movie as removed
      * @param idMovie the operand to use as ID of movie.
-     * @throws by.training.epam.service.exception.ServiceException
+     * @throws ServiceException
      * */
     void addStatistic(String loginUser, String idMovie, String comment, String mark) throws ServiceException, ServiceLogicException;
     /**
      * Remove comment of movie
      * @param idComment the operand to use as ID of comment.
-     * @throws by.training.epam.service.exception.ServiceException
+     * @throws ServiceException
      * */
     void removeComment(String idComment) throws ServiceException;
 
@@ -96,7 +96,7 @@ public interface IMovieService {
      * Remove comment of movie
      * @param noOfRecords operand to use as amount of movies's records.
      * @return the amount of page.
-     * @throws by.training.epam.service.exception.ServiceException
+     * @throws ServiceException
      * */
     int getNoOfPages(int noOfRecords) throws ServiceException;
 
@@ -104,7 +104,7 @@ public interface IMovieService {
      * Get movie
      * @param idMovie to use as ID of movie.
      * @return the movie.
-     * @throws by.training.epam.service.exception.ServiceException
+     * @throws ServiceException
      * */
     Movie getMovie(String idMovie) throws ServiceException;
 
@@ -112,14 +112,14 @@ public interface IMovieService {
      * Get movie's comments
      * @param idMovie to use as ID of movie.
      * @return the list of comments.
-     * @throws by.training.epam.service.exception.ServiceException
+     * @throws ServiceException
      * */
     List<Comment> getCommentsByMovie(String idMovie) throws ServiceException;
 
     /**
      * Get movie's types
      * @return the list of movie's types.
-     * @throws by.training.epam.service.exception.ServiceException
+     * @throws ServiceException
      * */
     List<Movie.TypeMovie> getAllMoviesTypes() throws ServiceException;
 
@@ -127,7 +127,7 @@ public interface IMovieService {
      * Get amount of records
      * @param position to use as user's position.
      * @return the result of records.
-     * @throws by.training.epam.service.exception.ServiceException
+     * @throws ServiceException
      * */
     int getNoOfRecords(String position) throws ServiceException;
 
@@ -136,14 +136,14 @@ public interface IMovieService {
      * @param page to use as number of request page.
      * @param position to use as user's position.
      * @return the sorted list of movies by date.
-     * @throws by.training.epam.service.exception.ServiceException
+     * @throws ServiceException
      * */
     List<Movie> sortByDate(int page, String position) throws ServiceException;
 
     /**
      * Get number of page
      * @return the list of movie's types.
-     * @throws by.training.epam.service.exception.ServiceException
+     * @throws ServiceException
      * */
     int getPage(String page) throws ServiceException;
 
@@ -152,7 +152,7 @@ public interface IMovieService {
      * @param page to use as number of request page.
      * @param positionString to use as user's position.
      * @return the sorted list of movies by rating.
-     * @throws by.training.epam.service.exception.ServiceException
+     * @throws ServiceException
      * */
     List<Movie> sortByRating(int page, String positionString) throws ServiceException;
 
@@ -161,7 +161,7 @@ public interface IMovieService {
      * @param page to use as number of request page.
      * @param positionString to use as user's position.
      * @return the list of movies.
-     * @throws by.training.epam.service.exception.ServiceException
+     * @throws ServiceException
      * */
     List<Movie> getMovies(int page, String positionString) throws ServiceException;
 }

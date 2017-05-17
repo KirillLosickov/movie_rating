@@ -14,7 +14,7 @@ public interface IPosition {
     /**
      * Get all countries.
      * @return the list of positions.
-     * @throws by.training.epam.dao.exception.DAOException
+     * @throws DAOException
      */
     List<Position> getAll() throws DAOException;
 

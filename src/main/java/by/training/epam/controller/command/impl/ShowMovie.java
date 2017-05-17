@@ -46,7 +46,7 @@ public class ShowMovie implements ICommand {
             request.setAttribute(RequestParameter.MOVIE.getValue(), movie);
             request.setAttribute(RequestParameter.COMMENT_LIST.getValue(), comments);
             jspPageName = JspPageName.MOVIE_PAGE;
-            logger.debug("\"" + ((String) request.getSession().getAttribute(RequestParameter.LOGIN.getValue())) + "\" try to reestablish movie");
+            logger.debug("\"" + ((String) request.getSession().getAttribute(RequestParameter.LOGIN.getValue())) + "\" reestablish movie");
         } catch (ServiceException e) {
             logger.error("\"" + ((String) request.getSession().getAttribute(RequestParameter.LOGIN.getValue())) + "\"", e);
             request.setAttribute(RequestParameter.INFORMATION.getValue(), e.getCause().getMessage());

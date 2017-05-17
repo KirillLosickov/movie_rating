@@ -32,7 +32,7 @@ public class Movie implements Serializable {
 
     /**
      * Property - type
-     * @see Movie.TypeMovie
+     * @see TypeMovie
      */
     private TypeMovie type;
 
@@ -181,7 +181,7 @@ public class Movie implements Serializable {
     }
 
     /**
-     * Function for get value {@link Movie.TypeMovie}
+     * Function for get value {@link TypeMovie}
      * @return value of type movie
      */
     public TypeMovie getType() {
@@ -189,7 +189,7 @@ public class Movie implements Serializable {
     }
 
     /**
-     * Function for set value of movie's type {@link Movie.TypeMovie}
+     * Function for set value of movie's type {@link TypeMovie}
      */
     public void setType(TypeMovie type) {
         this.type = type;

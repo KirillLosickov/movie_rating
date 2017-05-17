@@ -10,7 +10,7 @@ import by.training.epam.service.exception.ServiceException;
 public interface ICloseDB {
     /**
      * Get all connections of database.
-     * @throws by.training.epam.service.exception.ServiceException
+     * @throws ServiceException
      */
     void closeConnections() throws ServiceException;
 }

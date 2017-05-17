@@ -15,7 +15,7 @@ public interface ICountryService {
     /**
      * Get all counties.
      * @return the list of countries.
-     * @throws by.training.epam.service.exception.ServiceException
+     * @throws ServiceException
      */
     List<Country> getAll() throws ServiceException;
 

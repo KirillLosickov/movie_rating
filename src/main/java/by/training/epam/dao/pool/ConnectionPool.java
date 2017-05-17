@@ -41,8 +41,8 @@ public class ConnectionPool implements ICloseConnectionPool{
             logger.fatal("Driver load exception: " + driverName, e);
             throw new ConnectionPoolException("Driver load exception: " + driverName, e);
         } catch (MissingResourceException e) {
-            logger.fatal("Error of upload resource: " + e);
-            throw new ConnectionPoolException("Error of upload resource: " + e);
+            logger.fatal("Error of upload config: " + e);
+            throw new ConnectionPoolException("Error of upload config: " + e);
         }
         connectionQueue = new ArrayBlockingQueue<>(poolSize);
         givenAwayConQueue = new ArrayBlockingQueue<>(poolSize);

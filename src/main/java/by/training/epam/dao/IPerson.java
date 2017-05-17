@@ -14,7 +14,7 @@ public interface IPerson {
     /**
      * Get all countries.
      * @return the list of persons.
-     * @throws by.training.epam.dao.exception.DAOException
+     * @throws DAOException
      */
     List<Person> getAll() throws DAOException;
 }

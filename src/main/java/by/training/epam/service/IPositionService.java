@@ -14,7 +14,7 @@ public interface IPositionService {
     /**
      * Get all positions.
      * @return the list of positions.
-     * @throws by.training.epam.service.exception.ServiceException
+     * @throws ServiceException
      */
     List<Position> getAll() throws ServiceException;
 }

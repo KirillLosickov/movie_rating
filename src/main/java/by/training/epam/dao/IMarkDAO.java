@@ -13,7 +13,7 @@ public interface IMarkDAO {
      * @param loginUser the operand to use as login of user.
      * @param idMovie the operand to use as ID of movie.
      * @param valueMark the operand to use as value of mark.
-     * @throws by.training.epam.dao.exception.DAOException
+     * @throws DAOException
      */
     void addMark(String loginUser, int idMovie, Integer valueMark) throws DAOException;
 }

@@ -1,7 +1,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Redirect</title>
+    <title>Movie rating</title>
+    <style>
+        .descr { visibility: hidden; }
+    </style>
 </head>
 <script>
     function doRedirect() {
@@ -11,11 +14,10 @@
     }
 </script>
 <body onload="doRedirect();">
-Loading...
-<form class="myform" action="controller" method="post">
+<form class="descr" action="controller" method="post">
     <input type-="hidden" name="information" value="${requestScope.information}"/>
     <input type="hidden" name="command" value="redirect"/>
-    <input id="redirect" style="visibility:hidden;" type="submit"/>
+    <input id="redirect" type="submit"/>
 </form>
 </body>
 </html>

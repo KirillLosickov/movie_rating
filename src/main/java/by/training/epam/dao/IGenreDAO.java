@@ -14,7 +14,7 @@ public interface IGenreDAO {
     /**
      * Get all genres.
      * @return the list of genres.
-     * @throws by.training.epam.dao.exception.DAOException
+     * @throws DAOException
      */
     List<Genre> getAll() throws DAOException;
 }

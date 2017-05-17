@@ -8,7 +8,7 @@ import by.training.epam.dao.IMovieDAO;
 import by.training.epam.dao.IUserDAO;
 import by.training.epam.dao.exception.DAOException;
 import by.training.epam.dao.factory.DAOFactory;
-import by.training.epam.resource.DataResourceManager;
+import by.training.epam.config.DataResourceManager;
 import by.training.epam.service.IMovieService;
 import by.training.epam.service.exception.ServiceException;
 import by.training.epam.service.exception.ServiceLogicException;
