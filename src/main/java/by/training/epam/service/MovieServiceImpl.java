@@ -1,4 +1,4 @@
-package by.training.epam.service.impl;
+package by.training.epam.service;
 
 import by.training.epam.bean.*;
 import by.training.epam.controller.servlet.RequestParameter;
@@ -8,8 +8,7 @@ import by.training.epam.dao.IMovieDAO;
 import by.training.epam.dao.IUserDAO;
 import by.training.epam.dao.exception.DAOException;
 import by.training.epam.dao.factory.DAOFactory;
-import by.training.epam.config.DataResourceManager;
-import by.training.epam.service.IMovieService;
+import by.training.epam.config.ServiceResourceManager;
 import by.training.epam.service.exception.ServiceException;
 import by.training.epam.service.exception.ServiceLogicException;
 import by.training.epam.service.util.Util;
@@ -400,7 +399,7 @@ public class MovieServiceImpl implements IMovieService {
     //выбор сколько записей по умолчанию, зависит от логики приложения
     private int getRecordsOnPage() throws ServiceException {
         logger.debug("MovieServiceImpl.getRecordsOnPage()");
-        DataResourceManager manager = new DataResourceManager();
+        ServiceResourceManager manager = ServiceResourceManager.getInstance();
         String recordsOnPageString = manager.getValue(RequestParameter.RECORDS_ON_PAGE.getValue());
         int recordsOnPage = 0;
         try {

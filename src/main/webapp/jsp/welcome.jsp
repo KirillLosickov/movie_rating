@@ -29,13 +29,13 @@
 <body>
     <div class="banner">
         <div class="container-buttons">
-            <form action="controller" method="post">
+            <form action="controller" method="get">
                 <input class="lang_ru" type="hidden" name="command" value="change_local"/>
                 <input class="lang_ru" type="hidden" name="local" value="ru"/>
                 <input type="hidden" name="page" value="welcome_page"/>
                 <input class="lang_ru" type="submit" value="${ru_button}"/>
             </form>
-            <form action="controller" method="post">
+            <form action="controller" method="get">
                 <input class="lang_en" type="hidden" name="command" value="change_local"/>
                 <input class="lang_en" type="hidden" name="local" value="en"/>
                 <input type="hidden" name="page" value="welcome_page"/>

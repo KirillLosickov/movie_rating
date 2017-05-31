@@ -1,10 +1,9 @@
-package by.training.epam.service.impl;
+package by.training.epam.service;
 
 import by.training.epam.bean.User;
 import by.training.epam.dao.IUserDAO;
 import by.training.epam.dao.exception.DAOException;
 import by.training.epam.dao.factory.DAOFactory;
-import by.training.epam.service.IUserService;
 import by.training.epam.service.exception.ServiceException;
 import by.training.epam.service.exception.ServiceLogicException;
 import by.training.epam.service.util.Util;

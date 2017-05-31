@@ -46,7 +46,7 @@
         <c:forEach var="user" items="${userList}">
             <tr class="for_hover_tr">
                 <td>
-                    <form action="controller" method="post" style="margin: 0px;">
+                    <form action="controller" method="get" style="margin: 0px;">
                         <input type="hidden" name="command" value="personal_user">
                         <input type="hidden" name="login" value="${user.login}">
                         <input class="input_login" type="submit" value="${user.login}">

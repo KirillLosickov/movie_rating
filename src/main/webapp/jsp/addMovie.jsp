@@ -30,7 +30,6 @@
     <fmt:message bundle="${loc}" key="local.word.genres" var="genres_word"/>
     <fmt:message bundle="${loc}" key="local.word.participants" var="participants_word"/>
     <fmt:message bundle="${loc}" key="local.button.addFilm" var="addFilm_but"/>
-    <fmt:message bundle="${loc}" key="local.word.do_not_match_pattern" var="do_not_match_pattern"/>
 </head>
 <body>
 <%@include file="/jsp/part/banner.jsp"%>
@@ -41,17 +40,15 @@
         <h3>${name_word}</h3>
         <input class="addField" type="text" name="title" required pattern="{2,}"><br/>
         <h3>${budget_word}</h3>
-        <input class="addField" type="text" name="budget" pattern="[0-9]+"/><br/>
+        <input class="addField" type="text" name="budget" pattern="[0-9]+" value="0"/><br/>
         <h3>${profit_word}</h3>
-        <input class="addField" type="text" name="profit" pattern="[0-9]+"/><br/>
+        <input class="addField" type="text" name="profit" pattern="[0-9]+" value="0"/><br/>
         <h3>${duration_word}</h3>
-        <input class="addField" type="text" name="duration" placeholder="HH:MM" pattern="^([0-1]\d|2[0-3])(:[0-5]\d){1}$"required/><span
-            class="fieldFormat">${do_not_match_pattern}</span><br/>
+        <input class="addField" type="text" name="duration" placeholder="HH:MM" pattern="^([0-1]\d|2[0-3])(:[0-5]\d){1}$"required/><br/>
         <h3>${resticton_word}</h3>
-        <input class="addField" type="text" name="restriction_age" pattern="^[1-9]{1}$|^[1-9]{1}[0-9]{1}$|^100$" placeholder="1-100" required/><span
-            class="fieldFormat">${do_not_match_pattern}</span><br/>
+        <input class="addField" type="text" name="restriction_age" pattern="^[1-9]{1}$|^[1-9]{1}[0-9]{1}$|^100$" placeholder="1-100" required/><br/>
         <h3>${releaseDate_word} ошибка в pattern on jsp</h3>
-        <input type="text" name="date_release" pattern="^\d{4}\-(0?[1-9]|1[012])\-(0?[1-9]|[12]\d|3[01])$" placeholder="2016-03-12" required class="addField"/><br/><br/>
+        <input class="addField" type="text" name="date_release" pattern="^\d{4}\-(0?[1-9]|1[012])\-(0?[1-9]|[12]\d|3[01])$" placeholder="yyyy-mm-dd" required/><br/><br/>
         <input class="" type="file" name="poster" placeholder="poster" size="50"/><br/><br/>
         <hr/>
         <h3>${type_word}</h3>

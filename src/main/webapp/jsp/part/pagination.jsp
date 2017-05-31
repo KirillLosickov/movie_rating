@@ -3,7 +3,7 @@
     <tr>
         <c:if test="${currentPage != 1}">
             <td>
-            <form action="controller" method="post">
+            <form action="controller" method="get">
                 <input type="hidden" name="command" value="show_movies"/>
                 <input type="hidden" name="pagination" value="${currentPage - 1}"/>
                 <input type="hidden" name="page" value="user_page"/>
@@ -18,7 +18,7 @@
                 </c:when>
                 <c:otherwise>
                 <td>
-                    <form action="controller" method="post">
+                    <form action="controller" method="get">
                         <input type="hidden" name="command" value="${command}"/>
                         <input type="hidden" name="pagination" value="${i}"/>
                         <input type="hidden" name="page" value="user_page"/>
@@ -30,7 +30,7 @@
         </c:forEach>
         <c:if test="${currentPage lt noOfPages}">
             <td>
-            <form action="controller" method="post">
+            <form action="controller" method="get">
                 <input type="hidden" name="command" value="${command}"/>
                 <input type="hidden" name="pagination" value="${currentPage + 1}"/>
                 <input type="hidden" name="page" value="user_page"/>

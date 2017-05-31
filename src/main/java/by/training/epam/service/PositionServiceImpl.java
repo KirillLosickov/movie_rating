@@ -1,9 +1,8 @@
-package by.training.epam.service.impl;
+package by.training.epam.service;
 
 import by.training.epam.bean.Position;
 import by.training.epam.dao.exception.DAOException;
 import by.training.epam.dao.factory.DAOFactory;
-import by.training.epam.service.IPositionService;
 import by.training.epam.service.exception.ServiceException;
 import org.apache.log4j.Logger;
 

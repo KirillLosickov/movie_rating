@@ -4,7 +4,7 @@ package by.training.epam.controller.command.impl;
 import by.training.epam.controller.command.ICloseDBCommand;
 import by.training.epam.service.ICloseDB;
 import by.training.epam.service.exception.ServiceException;
-import by.training.epam.service.impl.CloseDBServiceImpl;
+import by.training.epam.service.CloseDBServiceImpl;
 import org.apache.log4j.Logger;
 
 import javax.servlet.http.HttpServletRequest;

@@ -14,7 +14,7 @@
 <c:set var="admin" value="admin"/>
 <c:set var="user" value="user"/>
 <div class="menu">
-    <form class="menu-horizontally" action="controller" method="post">
+    <form class="menu-horizontally" action="controller" method="get">
         <input type="hidden" name="command" value="show_movies"/>
         <input type="hidden" name="pagination" value="1"/>
         <input type="submit" value="${films_button}" class="input_class navigation"/>
@@ -24,7 +24,7 @@
     </div>-->
     <c:choose>
         <c:when test="${position eq (admin)}">
-            <form class="menu-horizontally" action="controller" method="post">
+            <form class="menu-horizontally" action="controller" method="get">
                 <input type="hidden" name="command" value="show_users"/>
                 <input type="submit" value="${users_button}" class="input_class navigation"/>
             </form>
@@ -33,7 +33,7 @@
             </div>-->
         </c:when>
         <c:when test="${position eq (user)}">
-            <form class="menu-horizontally" action="controller" method="post">
+            <form class="menu-horizontally" action="controller" method="get">
                 <input type="hidden" name="command" value="personal_user">
                 <input type="hidden" name="login" value="${sessionScope.login}">
                 <input type="submit" value="${account_button}" class="input_class navigation">
@@ -44,7 +44,7 @@
         </c:when>
     </c:choose>
     <c:if test="${position eq (admin)}">
-        <form class="menu-horizontally" action="controller" method="post">
+        <form class="menu-horizontally" action="controller" method="get">
             <input type="hidden" name="command" value="show_page_for_add_movie"/>
             <input class="input_class navigation" type="submit" value="${add_film_button}"/>
         </form>
@@ -53,12 +53,12 @@
         </div>-->
     </c:if>
     <c:if test="${movieList ne (null)}">
-        <form class="menu-vertically" action="controller" method="post">
+        <form class="menu-vertically" action="controller" method="get">
             <input type="hidden" name="command" value="sort_films_by_rating"/>
             <input type="hidden" name="pagination" value="1"/>
             <input type="submit" value="${sort_by_raiting_button}" class="input_class sort"/>
         </form>
-        <form class="menu-vertically" action="controller" method="post">
+        <form class="menu-vertically" action="controller" method="get">
             <input type="hidden" name="command" value="sort_films_by_date"/>
             <input type="hidden" name="pagination" value="1"/>
             <input type="submit" value="${sort_by_date_button}" class="input_class sort"/>

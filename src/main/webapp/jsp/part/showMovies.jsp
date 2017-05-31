@@ -17,13 +17,13 @@
 <c:set var="user" value="user"/>
 <c:forEach var="movie" items="${movieList}">
     <div class="main">
-        <form action="controller" method="post">
+        <form action="controller" method="get">
             <input type="hidden" name="command" value="show_movie"/>
             <input type="hidden" name="id_movie" value="${movie.id}"/>
             <input id="film_name" type="submit" value="${movie.title}"/>
         </form>
         <c:if test="${movie.imageName ne null}">
-            <form class="poster" action="controller" method="post">
+            <form class="poster" action="controller" method="get">
                 <input type="hidden" name="command" value="show_movie"/>
                 <input type="hidden" name="id_movie" value="${movie.id}"/>
                 <input id="film_img" type="image"
@@ -43,7 +43,7 @@
         <div id="button_under_film">
             <c:choose>
                 <c:when test="${position eq(admin)}">
-                    <form class="button" action="controller" method="post">
+                    <form class="button" action="controller" method="get">
                         <input type="hidden" name="id_movie" value="${movie.id}"/>
                         <input type="hidden" name="command" value="show_page_for_edit_movie"/>
                         <input class="all-btns" type="submit" value="${edit_button}"/>

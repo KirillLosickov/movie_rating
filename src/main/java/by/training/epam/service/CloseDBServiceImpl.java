@@ -1,9 +1,8 @@
-package by.training.epam.service.impl;
+package by.training.epam.service;
 
 import by.training.epam.dao.exception.ConnectionPoolException;
-import by.training.epam.dao.pool.ConnectionPool;
+import by.training.epam.dao.pool.impl.ConnectionPool;
 import by.training.epam.dao.pool.ICloseConnectionPool;
-import by.training.epam.service.ICloseDB;
 import by.training.epam.service.exception.ServiceException;
 import org.apache.log4j.Logger;
 

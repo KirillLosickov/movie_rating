@@ -1,6 +1,9 @@
-package by.training.epam.dao.pool;
+package by.training.epam.dao.pool.impl;
 
 import by.training.epam.dao.exception.ConnectionPoolException;
+import by.training.epam.dao.pool.DBParametr;
+import by.training.epam.config.DBResourceManager;
+import by.training.epam.dao.pool.ICloseConnectionPool;
 import org.apache.log4j.Logger;
 
 import java.sql.*;
@@ -8,7 +11,7 @@ import java.util.MissingResourceException;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
-public class ConnectionPool implements ICloseConnectionPool{
+public class ConnectionPool implements ICloseConnectionPool {
     private static Logger logger = Logger.getLogger(ConnectionPool.class);
 
     private static ConnectionPool instance;

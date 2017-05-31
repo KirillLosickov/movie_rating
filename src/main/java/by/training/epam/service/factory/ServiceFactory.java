@@ -1,6 +1,6 @@
 package by.training.epam.service.factory;
 
-import by.training.epam.service.impl.*;
+import by.training.epam.service.*;
 
 public class ServiceFactory {
     private static final ServiceFactory instance = new ServiceFactory();

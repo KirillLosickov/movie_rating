@@ -1,4 +1,4 @@
-package by.training.epam.dao.pool;
+package by.training.epam.config;
 
 import java.util.ResourceBundle;
 

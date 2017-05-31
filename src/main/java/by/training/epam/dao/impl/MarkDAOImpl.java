@@ -3,7 +3,7 @@ package by.training.epam.dao.impl;
 import by.training.epam.dao.IMarkDAO;
 import by.training.epam.dao.exception.ConnectionPoolException;
 import by.training.epam.dao.exception.DAOException;
-import by.training.epam.dao.pool.ConnectionPool;
+import by.training.epam.dao.pool.impl.ConnectionPool;
 import org.apache.log4j.Logger;
 
 import java.sql.Connection;

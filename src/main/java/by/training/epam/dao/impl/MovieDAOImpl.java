@@ -4,7 +4,7 @@ import by.training.epam.bean.*;
 import by.training.epam.dao.IMovieDAO;
 import by.training.epam.dao.exception.ConnectionPoolException;
 import by.training.epam.dao.exception.DAOException;
-import by.training.epam.dao.pool.ConnectionPool;
+import by.training.epam.dao.pool.impl.ConnectionPool;
 import org.apache.log4j.Logger;
 
 import java.sql.*;

@@ -32,7 +32,7 @@
 <c:if test="${pageContext.exception.message ne null}">
     ${exceptionMessageLocal}: ${pageContext.exception.message}<br/>
 </c:if>
-<form action="controller" method="post">
+<form action="controller" method="get">
     <input type="hidden" name="command" value="redirect"/>
     <input type="submit" value="${redirectWord}"/>
 </form>
